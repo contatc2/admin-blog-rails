@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { fetchPost } from '../actions';
 
 class PostsShow extends Component {
-  componentWillMount() {
+  componentDidMount() {
     // CHECK IF POST NOT ALREADY THERE?
     if (!this.props.post) {
       this.props.fetchPost(this.props.match.params.id);

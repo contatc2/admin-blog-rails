@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
 
 class PostsIndex extends Component {
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchPosts();
   }
 

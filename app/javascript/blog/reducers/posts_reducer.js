@@ -5,11 +5,8 @@ export default function(state = [], action) {
     case FETCH_POSTS:
       return action.payload;
     case FETCH_POST:
-      // action.payload is an object
+      return [action.payload];
       return [ action.payload ];
-    // case POST_CREATED:
-    //   // TODO: push it to the array of posts
-    //   return state;
     default:
       return state;
   }
